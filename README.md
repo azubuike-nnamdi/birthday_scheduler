@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# Birthday Scheduler 🎂
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application built with Expo that helps you keep track of birthdays and never miss celebrating your loved ones' special days.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Track birthdays of friends and family
+- Get notifications for upcoming birthdays
+- Organize birthdays by groups
+- Add custom notes and gift ideas
+- User-friendly interface built with React Native and Expo
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+- Expo Go app on your mobile device (optional)
+
+### Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone [your-repository-url]
+   cd birthday-scheduler
+   ```
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the development server
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+### Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+After starting the development server, you have several options to run the app:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **On your phone**: Scan the QR code with Expo Go (Android) or Camera app (iOS)
+- **iOS Simulator**: Press `i` in the terminal
+- **Android Emulator**: Press `a` in the terminal
+- **Web Browser**: Press `w` in the terminal
 
-## Get a fresh project
+## Development
 
-When you're ready, run:
+This project uses:
 
-```bash
-npm run reset-project
+- [Expo](https://expo.dev) for cross-platform development
+- [React Native](https://reactnative.dev) as the core framework
+- File-based routing with [Expo Router](https://docs.expo.dev/router/introduction)
+- [NativeWind](https://www.nativewind.dev) for styling
+
+## Project Structure
+
+```txt
+birthday-scheduler/
+├── app/              # Main application code
+├── assets/           # Images, fonts, and other static files
+├── components/       # Reusable React components
+└── types/           # TypeScript type definitions
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Support
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+If you encounter any issues or have questions, please file an issue in the repository.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the LICENSE file for details.
