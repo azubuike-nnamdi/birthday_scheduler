@@ -1,6 +1,9 @@
-import { Text, View } from "react-native";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
+  const handleSigIn = () => {
+    Alert.alert("Sign In");
+  };
   return (
     <View
       style={{
@@ -9,7 +12,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="text-red-500">Edit app/index.tsx to edit this screen.</Text>
+      <TouchableOpacity className="bg-blue-500 w-6/12 p-4 rounded-full" onPress={handleSigIn}>
+        <Text className="text-white text-center">Sign In with Google</Text>
+      </TouchableOpacity>
     </View>
   );
 }
