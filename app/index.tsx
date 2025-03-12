@@ -1,6 +1,14 @@
 import { Text, View } from "react-native";
+import { GoogleSigninButton } from '@react-native-google-signin/google-signin';
+import { useGoogleSignIn } from '../config/signin';
+import { configureGoogleSignIn } from '../config/google-config';
+import SignIn from "./sign-in";
 
-export default function Index() {
+configureGoogleSignIn();
+
+function Home() {
+  const { signIn } = useGoogleSignIn();
+
   return (
     <View
       style={{
@@ -9,7 +17,10 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="text-red-500">Edit app/index.tsx to edit this screen.</Text>
+      <Text>Welcome to Birthday Scheduler</Text>
+      <SignIn />
     </View>
   );
 }
+
+export default Home;
