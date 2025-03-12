@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nnamdi.azubuike.birthday-scheduler"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.nnamdi.azubuike.birthday_scheduler"
     },
     "web": {
       "bundler": "metro",
@@ -24,6 +26,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.990448339186-pk0u1sl5jt5sdgvckqjresd39f8cudal"
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -36,6 +44,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aa183ace-b2e6-4baf-8e64-80487934c84e"
+      }
     }
   }
 }
