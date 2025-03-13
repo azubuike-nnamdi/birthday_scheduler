@@ -9,7 +9,7 @@ export default function AppLayout() {
 
   //redirect to sign-in page if user is not authenticated
   if (!user) {
-    return <Redirect href={SIGN_IN_URL} />;
+    return <Redirect href={'/welcome'} />;
   }
 
   //show indicator if user is loading
