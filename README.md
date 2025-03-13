@@ -1,8 +1,15 @@
-# Welcome to your Expo app 👋
+# Birthday Scheduler App 🎂
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application built with [Expo](https://expo.dev) that helps you keep track of birthdays and never miss sending your wishes! Sign in with your Google account to get started.
 
-## Get started
+## Features
+
+- Google Authentication
+- Birthday tracking and management
+- Push notifications for upcoming birthdays
+- Cross-platform support (iOS & Android)
+
+## Getting Started
 
 1. Install dependencies
 
@@ -13,38 +20,28 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 2. Start the app
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+You can run the app on:
+- iOS Simulator
+- Android Emulator
+- Physical device using [Expo Go](https://expo.dev/go)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Development
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The application uses file-based routing with the core application code located in the **app** directory. 
 
-## Get a fresh project
+## Authentication
 
-When you're ready, run:
+This app uses Google Sign-In for authentication. Make sure you have a Google account ready to use the application.
 
-```bash
-npm run reset-project
-```
+## Need Help?
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Check out the [Expo documentation](https://docs.expo.dev/)
+- Join the [Expo Discord community](https://chat.expo.dev)
+- Report issues on our GitHub repository
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions are welcome! Please feel free to submit a Pull Request.
